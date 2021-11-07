@@ -15,8 +15,9 @@ include "../includes/header.php";
                     <div class="col-auto"></div>
                     <div class="col">
                         <div class="logo-small">
-                            <img src="../assets/img/logo.png" alt="">
-                            <h5>FiMobile</h5>
+                            <!-- <img src="../assets/img/logo.png" alt=""> -->
+                            <i class="bi bi-kanban-fill display-6"></i>
+                            <h5>Web2Rise</h5>
                         </div>
                     </div>
                     <div class="col-auto"></div>
@@ -31,7 +32,7 @@ include "../includes/header.php";
                     <label class="form-control-label" for="email">Username</label>
                 </div>
 
-                <div class="form-group form-floating is-invalid mb-3">
+                <div class="form-group form-floating is-valid mb-3">
                     <input type="password" class="form-control " id="password" placeholder="Password" name="password">
                     <label class="form-control-label" for="password">Password</label>
                     <button type="button" class="text-danger tooltip-btn" data-bs-toggle="tooltip" data-bs-placement="left" title="Enter valid Password" id="passworderror">
@@ -44,24 +45,24 @@ include "../includes/header.php";
                         <?= $_GET['msg'] ?>
                     </div>
                 <?php } ?>
-                <p class="mb-3 text-center">
+                <!-- <p class="mb-3 text-center">
                     <a href="forgot-password.html" class="">
                         Forgot your password?
                     </a>
-                </p>
+                </p> -->
 
                 <button type="submit" name="submit" class="btn btn-lg btn-default w-100 mb-4 shadow">
                     Sign in
                 </button>
             </form>
 
-            <p class="mb-2 text-muted">Don't have account?</p>
+            <!-- <p class="mb-2 text-muted">Don't have account?</p>
             <a href="signup.html" target="_self" class="">
                 Sign up <i class="bi bi-arrow-right"></i>
-            </a>
+            </a> -->
 
         </div>
-        <div class="col-12 text-center mt-auto">
+        <!-- <div class="col-12 text-center mt-auto">
             <div class="row justify-content-center footer-info">
                 <div class="col-auto">
                     <p class="text-muted">Or you can continue with </p>
@@ -72,7 +73,7 @@ include "../includes/header.php";
                     <a href="#" class="p-1"><i class="bi bi-facebook"></i></a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </main>
 <?php
