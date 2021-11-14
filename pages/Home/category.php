@@ -6,7 +6,7 @@ if ($stmt = $conn->prepare("SELECT category.id,category.company_name,COUNT(task.
     <!-- Saving targets -->
     <div class="row mb-3">
         <div class="col">
-            <h6 class="title">All Companies</h6>
+            <h6 class="title">All Categories</h6>
         </div>
 
     </div>
@@ -20,7 +20,11 @@ if ($stmt = $conn->prepare("SELECT category.id,category.company_name,COUNT(task.
                     <a href="?task=<?= $row['id'] ?>" class="card-body text-dark">
                         <div class="row">
                             <div class="col align-self-center">
-                                <h3 class="small mb-1"><?= $row['company_name'] ?> <span class="float-end">Total : <?= $row['total']; ?></span></h3>
+                                <div class="row mb-1">
+                                    <div class="col-9 text-truncate"><?= $row['company_name'] ?></div>
+                                    <div class="col-3"> <?= $row['total']; ?></div>
+                                </div>
+
 
                                 <div class="d-flex justify-content-between">
                                     <div>

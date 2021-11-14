@@ -10,12 +10,12 @@
             </div>
             <div class="modal-body text-center">
                 
-                <form class="was-validated">
+                <form action="../db/categoryProcess.php" class="was-validated" method="POST">
                     <div class="form-floating is-valid mb-3">
-                        <input type="text" class="form-control" placeholder="Username" id="username">
-                        <label for="username">Category Name</label>
+                        <input type="text" class="form-control" placeholder="Category Name" id="categoryName" name="categoryName">
+                        <label for="categoryName">Category Name</label>
                     </div>
-                    <button type="button" class="btn btn-lg btn-default w-100 mb-4 shadow">
+                    <button type="submit" name="submitCategory" class="btn btn-lg btn-default w-100 mb-4 shadow">
                         Add Category
                     </button>
                 </form>

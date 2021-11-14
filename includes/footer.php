@@ -26,6 +26,8 @@
     <!-- page level custom script -->
     <script src="../assets/js/app.js"></script>
 
+    <script src="../pages/Home/taskProcess.js"></script>
+
 </body>
 
 </html>

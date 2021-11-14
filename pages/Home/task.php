@@ -2,7 +2,6 @@
     $stmt->bind_param("i", $_GET['task']);
     $stmt->execute();
     $data = $stmt->get_result()->fetch_all(MYSQLI_ASSOC);
-
     if ($data) :
 ?>
 
@@ -13,7 +12,7 @@
                 </h6>
             </div>
             <div class="col-auto align-self-center">
-                <a href="./" class="small">View all</a>
+                <a href="./home.php" class="small">View all</a>
             </div>
         </div>
         <!-- tabs structure -->
@@ -33,7 +32,7 @@
                 <!-- Transactions -->
                 <div class="row mb-4">
                     <div class="col-12 px-0">
-                        <ul class="list-group list-group-flush bg-none">
+                        <ul class="list-group list-group-flush bg-none" id="taskList" data-id="<?=$_GET['task']?>">
                             <?php
 
                             foreach ($data as $row) {
